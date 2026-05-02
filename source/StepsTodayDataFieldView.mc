@@ -4,7 +4,7 @@ import Toybox.Lang;
 import Toybox.Time;
 import Toybox.WatchUi;
 
-class DailyStepsDataFieldView extends WatchUi.SimpleDataField {
+class StepsTodayDataFieldView extends WatchUi.SimpleDataField {
     function initialize() {
         SimpleDataField.initialize();
         label = WatchUi.loadResource(Rez.Strings.LabelStepsToday).toUpper();

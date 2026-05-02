@@ -2,7 +2,7 @@ import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
 
-class DailyStepsDataFieldApp extends Application.AppBase {
+class StepsTodayDataFieldApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
@@ -18,11 +18,11 @@ class DailyStepsDataFieldApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new DailyStepsDataFieldView() ];
+        return [ new StepsTodayDataFieldView() ];
     }
 
 }
 
-function getApp() as DailyStepsDataFieldApp {
-    return Application.getApp() as DailyStepsDataFieldApp;
+function getApp() as StepsTodayDataFieldApp {
+    return Application.getApp() as StepsTodayDataFieldApp;
 }
